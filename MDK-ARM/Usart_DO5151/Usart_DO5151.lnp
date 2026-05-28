@@ -1,0 +1,28 @@
+--cpu=Cortex-M33
+"usart_do5151\startup_stm32u575xx.o"
+"usart_do5151\main.o"
+"usart_do5151\stm32u5xx_it.o"
+"usart_do5151\stm32u5xx_hal_msp.o"
+"usart_do5151\stm32u5xx_hal_cortex.o"
+"usart_do5151\stm32u5xx_hal.o"
+"usart_do5151\stm32u5xx_hal_i2c.o"
+"usart_do5151\stm32u5xx_hal_i2c_ex.o"
+"usart_do5151\stm32u5xx_hal_rcc.o"
+"usart_do5151\stm32u5xx_hal_rcc_ex.o"
+"usart_do5151\stm32u5xx_hal_flash.o"
+"usart_do5151\stm32u5xx_hal_flash_ex.o"
+"usart_do5151\stm32u5xx_hal_gpio.o"
+"usart_do5151\stm32u5xx_hal_dma.o"
+"usart_do5151\stm32u5xx_hal_dma_ex.o"
+"usart_do5151\stm32u5xx_hal_exti.o"
+"usart_do5151\stm32u5xx_hal_pwr.o"
+"usart_do5151\stm32u5xx_hal_pwr_ex.o"
+"usart_do5151\stm32u5xx_hal_gtzc.o"
+"usart_do5151\stm32u5xx_hal_icache.o"
+"usart_do5151\stm32u5xx_hal_uart.o"
+"usart_do5151\stm32u5xx_hal_uart_ex.o"
+"usart_do5151\system_stm32u5xx.o"
+--strict --scatter "Usart_DO5151\Usart_DO5151.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Usart_DO5151.map" -o Usart_DO5151\Usart_DO5151.axf
